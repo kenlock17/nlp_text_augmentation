@@ -1,6 +1,6 @@
 # Easy data augmentation techniques for text classification
 # Jason Wei and Kai Zou
-import os
+
 from eda import *
 
 #arguments to be parsed from command line
@@ -52,7 +52,7 @@ if alpha_sr == alpha_ri == alpha_rs == alpha_rd == 0:
      ap.error('At least one alpha should be greater than zero')
 
 #generate more data with standard augmentation
-def gen_eda(train_orig, alpha_sr, alpha_ri, alpha_rs, alpha_rd, num_aug=9, output_file='/content/'):
+def gen_eda(train_orig, output_file, alpha_sr, alpha_ri, alpha_rs, alpha_rd, num_aug=9):
 
     writer = open(output_file, 'w')
     lines = open(train_orig, 'r').readlines()
