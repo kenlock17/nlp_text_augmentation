@@ -1,7 +1,6 @@
 # Easy data augmentation techniques for text classification
 # Jason Wei and Kai Zou
 import os
-os.chdir('D:\\NeurobotX\\NX- Managment\\Projects\\8. (Text Augmentation)\\eda_nlp-master\\code')
 from eda import *
 
 #arguments to be parsed from command line
